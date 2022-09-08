@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .canvas {
+            background: white;
+            border: 1px solid black;
+        }
+        .colorbtn {
+            width: 40px;
+            height: 40px;
+            border : 0;
+            border-radius: 20px;
+        }
+
+        .colorbtn[data-color='black'] {background: black;}
+        .colorbtn[data-color='red'] {background: red;}
+        .colorbtn[data-color='pink'] {background: rgb(255,192,203);}
+        .colorbtn[data-color='rgb(110, 209, 255)'] {background: rgb(110, 209, 255);}
+
+
+
+        body{cursor: none;}
+        .cursor{
+        width: 20px; height: 20px; 
+        background-color: #000; 
+        border-radius: 10px; 
+        position: absolute; left: 0; top: 0; 
+        z-index: 999; 
+        transition: background-color .2s, border-color .2s, border-radius .2s, transform .6s;
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+    <!-- https://devwoodie.tistory.com/m/13 A -->
+
+    <canvas class="canvas" width="600" height="400">이 브라우저는 캔버스를 지원하지 않습니다.</canvas>
+    <div class="control">
+        <button class="colorbtn" data-color="black"></button>
+        <button class="colorbtn" data-color="red"></button>
+        <button class="colorbtn" data-color="pink"></button>
+        <button class="colorbtn" data-color="rgb(110, 209, 255)"></button>
+        <button class="clearbtn" value="clear" >clear</button>
+
+    </div>
+    
+    <script>
+        const canvas = document.querySelector('.canvas');
+        const context = canvas.getContext('2d');
+        const control = document.querySelector('.control');
+        const clearall = document.querySelector('.clearbtn');
+        let drawingMode;
+        let clickedcolor = 'yellow';
+
+        function downhandler(){
+            drawingMode = true;
+        }
+
+        function uphandler() {
+            drawingMode = false;
+        }
+       
+        function movehandler(event) {
+            if (!drawingMode) return;
+
+            context.fillStyle = clickedcolor;
+            context.beginPath();
+            context.arc(event.layerX,event.layerY,5,0,Math.PI * 2,false);
+            context.fill();
+        }
+
+        function changecolor(event) {
+            clickedcolor = event.target.getAttribute('data-color');
+        }
+        
+        function clearAll() {
+            context.clearRect(0,0,canvas.width, canvas.height);
+        }
+        
+        canvas.addEventListener('mousedown', downhandler);
+        canvas.addEventListener('mousemove', movehandler);
+        canvas.addEventListener('mouseup', uphandler);
+        control.addEventListener('click', changecolor);
+        clearall.addEventListener('click', clearAll)
+        
+
+        //Element.getAttribute() <- 개념 알아ㅜ기
+        //https://developer.mozilla.org/ko/docs/Web/API/Element/getAttribute
+
+    </script>
+
+</body>
+</html>
