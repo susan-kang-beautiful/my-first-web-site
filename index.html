@@ -56,7 +56,11 @@
         const control = document.querySelector('.control');
         const clearall = document.querySelector('.clearbtn');
         let drawingMode;
+        let tchdrawingMode;
         let clickedcolor = 'yellow';
+
+
+        //Click Event
 
         function downhandler(){
             drawingMode = true;
@@ -88,9 +92,89 @@
         canvas.addEventListener('mouseup', uphandler);
         control.addEventListener('click', changecolor);
         clearall.addEventListener('click', clearAll)
+
+
+        
+        
+        // Touch Event
+
+        function downhandler(){
+            drawingMode = true;
+        }
+
+        function uphandler() {
+            drawingMode = false;
+        }
+       
+        function movehandler(event) {
+            if (!drawingMode) return;
+
+            context.fillStyle = clickedcolor;
+            context.beginPath();
+            context.arc(event.layerX,event.layerY,5,0,Math.PI * 2,false);
+            context.fill();
+        }
+
+        function changecolor(event) {
+            clickedcolor = event.target.getAttribute('data-color');
+        }
+        
+        function clearAll() {
+            context.clearRect(0,0,canvas.width, canvas.height);
+        }
+        
+        canvas.addEventListener('mousedown', downhandler);
+        canvas.addEventListener('mousemove', movehandler);
+        canvas.addEventListener('mouseup', uphandler);
+        control.addEventListener('click', changecolor);
+        clearall.addEventListener('click', clearAll)
+
+        // touch prevent
+        
+        function preventBehavior(e) {
+            e.preventBehavior();
+        }
+        canvas.addEventListener('touchmove', preventBehavior,false);
+
+
+
+
+
+        // touch move
         
 
-        //Element.getAttribute() <- 개념 알아ㅜ기
+
+
+        function tchdownhandler(){
+            tchdrawingMode = true;}
+
+        function tchuphandler() {
+            tchdrawingMode = false;}
+
+        function tchmovehandler(event) {
+            if (!tchdrawingMode) return;
+
+            context.fillStyle = clickedcolor;
+            context.beginPath();
+            context.arc(event.layerX,event.layerY,5,0,Math.PI * 2,false);
+            context.fill();
+        }
+
+        function tchchangecolor(event) {
+            clickedcolor = event.target.getAttribute('data-color');
+        }
+        
+        function tchclearAll() {
+            context.clearRect(0,0,canvas.width, canvas.height);
+        }
+        
+        canvas.addEventListener('touchstart', tchdownhandler);
+        canvas.addEventListener('touchmove', tchmovehandler);
+        canvas.addEventListener('touchend', tchuphandler);
+        control.addEventListener('touch', tchchangecolor);
+        clearall.addEventListener('touch', tchclearAll)
+
+        //Element.getAttribute() <- 개념 알아두기
         //https://developer.mozilla.org/ko/docs/Web/API/Element/getAttribute
 
     </script>
