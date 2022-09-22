@@ -1,31 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2022-09-21T23:46:13.054Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="7D-czQDX9sqbad-ogD6w" version="20.3.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-22T00:08:58.818Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="Vu5dnJQrXSasD_Ezt_WB" version="20.3.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="770" dy="765" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1626" dy="1962" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="tEosVrPd5JoN4bMh0qFb-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="tEosVrPd5JoN4bMh0qFb-0">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="130" y="160" as="targetPoint" />
+            <mxPoint x="-20" y="-110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="tEosVrPd5JoN4bMh0qFb-0" value="Start" style="ellipse;whiteSpace=wrap;html=1;hachureGap=4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="70" y="50" width="120" height="70" as="geometry" />
+          <mxGeometry x="-80" y="-220" width="120" height="70" as="geometry" />
         </mxCell>
         <mxCell id="tEosVrPd5JoN4bMh0qFb-5" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="tEosVrPd5JoN4bMh0qFb-3" target="tEosVrPd5JoN4bMh0qFb-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="tEosVrPd5JoN4bMh0qFb-3" value="몇명이 게임을 하겠습니까?&lt;br&gt;&lt;br&gt;프롬프트로 물어봄&lt;br&gt;그걸 변수에 저장해서&lt;br&gt;추후에 사용&lt;br&gt;*몇명이 참여하고 있습니다. 노출" style="rounded=0;whiteSpace=wrap;html=1;hachureGap=4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="50" y="160" width="160" height="120" as="geometry" />
+          <mxGeometry x="-100" y="-110" width="150" height="120" as="geometry" />
         </mxCell>
         <mxCell id="tEosVrPd5JoN4bMh0qFb-4" value="대기" style="whiteSpace=wrap;html=1;hachureGap=4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="50" y="350" width="160" height="60" as="geometry" />
+          <mxGeometry x="-95" y="80" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tEosVrPd5JoN4bMh0qFb-6" value="자바스크립트 변수에 저장하는것과 화면에 출력되는것은 확실히 다르다는 것을 인지해야한다.&lt;br&gt;&lt;br&gt;화면에 표시를 따로 해주는 코드를 작성해줘야한다." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;hachureGap=4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="220" y="130" width="140" height="160" as="geometry" />
+        <mxCell id="tEosVrPd5JoN4bMh0qFb-6" value="자바스크립트 변수에 저장하는것과 화면에 출력되는것은 확실히 다르다는 것을 인지해야한다.&lt;br&gt;&lt;br&gt;화면에 표시를 따로 해주는 코드를 작성해줘야한다.&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;lt; 화면 &amp;gt;&amp;nbsp;&lt;br&gt;1) 게임중인 회원수 안내문&lt;br&gt;2) 몇번째 회원의 진행순서입니다.&lt;br&gt;3) 게임단어 나열부분&lt;br&gt;4) 단어 입력창" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;hachureGap=4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="80" y="-200" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="tEosVrPd5JoN4bMh0qFb-10" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="tEosVrPd5JoN4bMh0qFb-8" target="tEosVrPd5JoN4bMh0qFb-9">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="tEosVrPd5JoN4bMh0qFb-8" value="대기" style="whiteSpace=wrap;html=1;hachureGap=4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="430" y="90" width="160" height="60" as="geometry" />
+          <mxGeometry x="430" y="40" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tEosVrPd5JoN4bMh0qFb-12" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="tEosVrPd5JoN4bMh0qFb-9" target="tEosVrPd5JoN4bMh0qFb-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tEosVrPd5JoN4bMh0qFb-18" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="tEosVrPd5JoN4bMh0qFb-9" target="tEosVrPd5JoN4bMh0qFb-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tEosVrPd5JoN4bMh0qFb-9" value="몇번째 순서의 참가자인지 확인" style="rhombus;whiteSpace=wrap;html=1;hachureGap=4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="387.5" y="150" width="245" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="tEosVrPd5JoN4bMh0qFb-11" value="word (제시어)&amp;nbsp;&lt;br&gt;비어있으면 첫번째 순서의 참가자" style="whiteSpace=wrap;html=1;hachureGap=4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="290" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tEosVrPd5JoN4bMh0qFb-16" value="부동산;;;&amp;nbsp;&lt;br&gt;&lt;br&gt;애경그룹이 50% 지분이 있다&lt;br&gt;AK벨리가 완판이 되었다고 한다&lt;br&gt;&lt;br&gt;당산, 청라의 경우는 분양 받을 수 있다고 한다.&lt;br&gt;구로 , 당산은 주차장시설때문에 손님한테 욕먹을 장소이다.&lt;br&gt;&lt;br&gt;&lt;br&gt;SKview는&amp;nbsp;&lt;br&gt;주차관리 시설은 괜찮아서 손님한테 욕먹는 현장은 아니다.&lt;br&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;hachureGap=4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="320" y="-610" width="400" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="tEosVrPd5JoN4bMh0qFb-17" value="word (제시어) 가 이미 있다.&amp;nbsp;&lt;br&gt;그 제시어가 틀렸는지 안틀렸는지 평가한다." style="rhombus;whiteSpace=wrap;html=1;hachureGap=4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="560" y="260" width="280" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
